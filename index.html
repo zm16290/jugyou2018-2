@@ -25,6 +25,9 @@
   <script src="ex07-12.js"></script>
   <script src="ex07-13.js"></script>
   
+  <script src="ex08-1.js"></script>
+  <script src="ex08-2.js"></script>
+  
   <script src="ex09-2.js"></script>
   </head>
 
@@ -144,9 +147,25 @@
   <input type="button" value="どっち" onclick="dotira();">
   <br>
  
+  <h1>血液型を当てる</h1>
+  <p>あなたの血液型にAという文字は含まれていますか？(yes/no)
+    <input type="text" id="a"></p>
+  <p>あなたの血液型にBという文字は含まれていますか？(yes/no)
+    <input type="text" id="b"></p>
+  <p><input type="button" value="判定" onclick="bloodtype();"></p>
+  <br>
+  
+  <h2>練習問題08-2</h2>
+  <p>横640ピクセル、縦480ピクセルの白黒画像の情報量は約何キロバイトでしょうか？</p>
+  <p><input type="button" value="答え" onclick="seikai1();"></p>
+  <p>横640ピクセル、縦480ピクセルの16色画像の情報量は約何キロバイトでしょうか？</p>
+  <p><input type="button" value="答え" onclick="seikai2();"></p>
+  <br>
+  
   <h1>JavaScriptの変数とデバッガを理解09-2</h1>
   <p>下のボタンを押すと数字が表示されます</p>
-  <p><input type="button" value="実行ボタン" onclick="addCount();"></p>
+  <p><input type="button" value="実行ボタン" onclick="addCount();">
+  </p>
   </body>
   
 </html>
