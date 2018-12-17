@@ -4,16 +4,18 @@
 <head>
   <meta charset="UTF-8">
   <title>Web開発の練習2</title>
+  <link rel="stylesheet" href="abc.css">
   <script src="ex6-5.js"></script>
   <script src="ex6-7.js"></script>
   <script src="ex6-8.js"></script>
   <script src="ex06-9.js"></script>
-  <script src="ex1997.js"></script><!--画像変更-->
+  <script src="ex1997.js"></script>
+  <!--画像変更-->
   <script src="ex06-10.js"></script>
   <script src="ex06-11.js"></script>
   <script src="ex06-12.js"></script>
   <script src="ex06-13.js"></script>
-  
+
   <script src="ex07-1.js"></script>
   <script src="ex07-3.js"></script>
   <script src="ex07-4.js"></script>
@@ -24,43 +26,48 @@
   <script src="ex07-11.js"></script>
   <script src="ex07-12.js"></script>
   <script src="ex07-13.js"></script>
-  
+
   <script src="ex08-1.js"></script>
   <script src="ex08-2.js"></script>
-  
+  <script src="ex08-4.js"></script>
+
   <script src="ex09-2.js"></script>
-  </head>
+</head>
 
 <body>
-  <h1>変数の練習</h1><!--ex6-5.js-->
+  <h1>変数の練習</h1>
+  <!--ex6-5.js-->
   <input type="button" value="あいさつ" onclick="sayhello65();">
   <input type="button" value="太郎" onclick="taro65();">
   <input type="button" value="花子" onclick="hanako65();">
 
-  <h1>引数の練習</h1><!--ex6-7.js-->
+  <h1>引数の練習</h1>
+  <!--ex6-7.js-->
   <input type="button" value="あいさつ" onclick="sayhello67();">
-  <input type="button" value="太郎"     onclick="someone('太郎');">
-  <input type="button" value="花子"     onclick="someone('花子');">
-  <input type="button" value="レイ"     onclick="someone('レイ');">
-  <input type="button" value="シンジ"   onclick="someone('シンジ');">
-  <input type="button" value="アスカ"   onclick="someone('アスカ');">
-  
-   <h1>JavaScriptによる変更の練習</h1><!--ex06-8.js-->
-   <input type="button" value="あいさつ" onclick="sayhello68();">
-   <input type="button" value="太郎" onclick="taro68();">
-   <input type="button" value="花子" onclick="hanako68();">
-   <p id="who">最初はworld</p>
-    
-  <h1>JavaScriptによるページの変更</h1> <!--ex06-9.js-->
+  <input type="button" value="太郎" onclick="someone('太郎');">
+  <input type="button" value="花子" onclick="someone('花子');">
+  <input type="button" value="レイ" onclick="someone('レイ');">
+  <input type="button" value="シンジ" onclick="someone('シンジ');">
+  <input type="button" value="アスカ" onclick="someone('アスカ');">
+
+  <h1>JavaScriptによる変更の練習</h1>
+  <!--ex06-8.js-->
+  <input type="button" value="あいさつ" onclick="sayhello68();">
+  <input type="button" value="太郎" onclick="taro68();">
+  <input type="button" value="花子" onclick="hanako68();">
+  <p id="who">最初はworld</p>
+
+  <h1>JavaScriptによるページの変更</h1>
+  <!--ex06-9.js-->
   <div id="txt1">
     <input type="button" value="テキストの変更" onclick="txtchange1();">城西大学
   </div>
-   <!--ex1997.js-->
-    <input type="button" value="真顔" onclick="face1();">
-    <input type="button" value="笑顔" onclick="face2();">
-    <div id="face"><img src="./img/ochanoma_mu.png" alt="顔"></div>
+  <!--ex1997.js-->
+  <input type="button" value="真顔" onclick="face1();">
+  <input type="button" value="笑顔" onclick="face2();">
+  <div id="face"><img src="./img/ochanoma_mu.png" alt="顔" id="kao1"></div>
   <br>
-  
+
   <h1>タイマーイベントによる実行6-10</h1>
   <form name="timer">
     <input type="button" value="スタート" onclick="startfunc()">
@@ -70,8 +77,8 @@
   <br>
   <form>
     <input type="button" value="Timer" onclick="setTimeout('mes()',3000)">
-  </form> 
-  
+  </form>
+
   <h1>タイマーイベントによる実行6-11</h1>
   <form name="timer2">
     <input type="button" value="スタート" onclick="hyoji2()">
@@ -79,74 +86,74 @@
     <input type="text" name="moji2" size="30" value="">
   </form>
   <br>
-  
- <h1>タイマーでの画像変更06-12</h1>
- <input type="button" value="GO" onclick="henkou()"><br>
+
+  <h1>タイマーでの画像変更06-12</h1>
+  <input type="button" value="GO" onclick="henkou()"><br>
   <div id="man"><img src="./img/coldsleep_man.png" alt="寝"></div>
-  
- <h1>タイマーでの画像変更06-13</h1>
+
+  <h1>タイマーでの画像変更06-13</h1>
   <input type="button" value="変えて戻す" onclick="henkou2()"><br>
   <img src="./img/coldsleep_man.png" id="man2" alt="いらすとや">
   <br>
   <h1>テキスト入力の練習</h1>
   <input type="button" value="あいさつ" onclick="sayhello71();">
-    <p>
-      誰？<input type="text" id="who71">
-    </p>
+  <p>
+    誰？<input type="text" id="who71">
+  </p>
   <br>
-  
+
   <h1>足し算07-3</h1>
- <p>
-   <input type="text" id="input1"> + <input type="text" id="input2">
-   <input type="button" value="計算" onclick="add();">
+  <p>
+    <input type="text" id="input1"> + <input type="text" id="input2">
+    <input type="button" value="計算" onclick="add();">
   </p><br>
-  
+
   <h2>ボディマス指数07-4 低体重・普通・肥満、判定込</h2>
   <p>
     体重<input type="text" id="1input"> + 身長（ｍ）<input type="text" id="2input">
     <input type="button" value="計算" onclick="add2();">
   </p><br>
-  
+
   <h1>なぞなぞ07-5 あたりのみ</h1>
   <p>目を閉じてないと見られないものはなーに？</p>
   <p>
     答(漢字1文字で):<input type="text" id="answer">
     <input type="button" value="解答" onclick="nazo();">
   </p><br>
-  
+
   <h2>なぞなぞ２ 07-6 あたりとはずれ</h2>
   <p>目を閉じてないと見られないものはなーに？</p>
   <p>
     答(漢字１文字で):<input type="text" id="answer2">
     <input type="button" value="解答" onclick="nazo2();">
   </p><br>
-  
+
   <h2>なぞなぞ２ 07-7 はずれとあたり</h2>
   <p>目を閉じてないと見られないものはなーに？</p>
   <p>
     答(漢字１文字で):<input type="text" id="answer3">
     <input type="button" value="解答" onclick="nazo3();">
   </p><br>
-  
+
   <h3>"夢"でも"ゆめ"でもOK ex07-8</h3>
   <input type="text" id="answer4">
   <input type="button" value="解答" onclick="nazo4();">
   <br>
-  
+
   <h2>練習問題07-11</h2>
   ジャバスクリプトのみ
- <br>
-  
+  <br>
+
   <h2>練習問題07-12 if文1つver</h2>
   <input type="text" id="answer5">
   <input type="button" value="解答" onclick="nazo5();">
   <br>
-  
+
   <h1>演習 閏年か平年か 07-13</h1>
   <input type="text" id="toshi">
   <input type="button" value="どっち" onclick="dotira();">
   <br>
- 
+
   <h1>血液型を当てる</h1>
   <p>あなたの血液型にAという文字は含まれていますか？(yes/no)
     <input type="text" id="a"></p>
@@ -154,18 +161,24 @@
     <input type="text" id="b"></p>
   <p><input type="button" value="判定" onclick="bloodtype();"></p>
   <br>
-  
+
   <h2>練習問題08-2</h2>
   <p>横640ピクセル、縦480ピクセルの白黒画像の情報量は約何キロバイトでしょうか？</p>
   <p><input type="button" value="答え" onclick="seikai1();"></p>
   <p>横640ピクセル、縦480ピクセルの16色画像の情報量は約何キロバイトでしょうか？</p>
   <p><input type="button" value="答え" onclick="seikai2();"></p>
   <br>
-  
+
   <h1>JavaScriptの変数とデバッガを理解09-2</h1>
   <p>下のボタンを押すと数字が表示されます</p>
   <p><input type="button" value="実行ボタン" onclick="addCount();">
   </p>
-  </body>
   
+  <h2>ラングレングス法で圧縮された次のビット列を展開しなさい</h2>
+  <input type="button" value="答え" onclick="tenkai();">
+  <br>
+  <h2>展開したとき９×９の図形に塗ったらどうなる？</h2>
+  <img src="./img/8_4.png" alt="8_4図形" id="gazou">
+</body>
+
 </html>
