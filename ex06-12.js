@@ -3,5 +3,5 @@ function henkou(){
 }
 
 function kaeru(){
-  document.getElementById('man').innerHTML='<img src="./img/coldsleep_wakeup_man.png">'
+  document.getElementById('man').innerHTML='<img src="./img/coldsleep_wakeup_man.png" id="man4">'
 }
